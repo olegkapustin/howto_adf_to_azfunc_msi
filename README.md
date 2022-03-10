@@ -57,7 +57,7 @@ things:
     1. Make sure you have [AzureAD powershell module](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0#installing-the-azure-ad-module) installed.
     2. Use this snippet to assign the role (also available [here](./Assign-AppRoleToAdfMsi.ps1)):
 
-```ps
+```PowerShell
 $tenantId = '<Tenant ID (GUID)>'
 $adfName = '<ADF Instance Name>'
 $aadAppName = '<AAD App Name>'
@@ -88,7 +88,7 @@ Usage instructions:
 3. Open the PowerShell console.
 4. Execute as follows (**Note**: The script will open a browser windows for interactive authentication to provided Azure AD tenant):
 
-```cmd
+```Batchfile
 powershell .\Configure-AADAppForAzFuncAndAdf.ps1 -pTenantId <your_tenant_id> -pFunctionAppName <your_func_app_name> -pAadAppName <your_aad_app_name> -pAdfName <my_adf_name>
 ```
 
